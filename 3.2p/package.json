@@ -1,0 +1,33 @@
+{
+  "name": "sit725-prac3",
+  "version": "1.0.0",
+  "description": "SIT 725 Week 3 Practical Task",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "jquery": "^3.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/sit725-prac3.git"
+  },
+  "keywords": [
+    "Node.js",
+    "Express",
+    "Materialize",
+    "HTML",
+    "JavaScript"
+  ],
+  "bugs": {
+    "url": "https://github.com/yourusername/sit725-prac3/issues"
+  },
+  "homepage": "https://github.com/yourusername/sit725-prac3#readme"
+}
