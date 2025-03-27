@@ -15,7 +15,7 @@ $(document).ready(function () {
         {
             title: "Poodle",
             image: "image/dogp2.jpeg",
-            link: "Hi! I'm Poodle",
+            link: "Hi! I'm Poodle", 
             description: "HELLO!!"
         },
         {
@@ -32,41 +32,36 @@ $(document).ready(function () {
         }
     ];
 
-    // Function to display more information when a card is clicked
-    const displayCardInfo = (card) => {
-        alert(`Information about ${card.title}: ${card.description}`);
-    };
-
     // Function to add cards dynamically
     const addCards = (items) => {
         $('#card-section').empty(); // Clear existing cards
         items.forEach(item => {
             let itemToAppend = `
                 <div class="col s4 center-align">
-                    <div class="card medium" id="${item.title}"> <!-- Added ID for each card -->
+                    <div class="card medium"> 
                         <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" src="${item.image}" alt="${item.title}">
                         </div>
+
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">${item.title}
                                 <i class="material-icons right">more_vert</i>
                             </span>
+
                             <p><a href="#">${item.link}</a></p>
                         </div>
+                        
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-4">${item.title}
                                 <i class="material-icons right">close</i>
                             </span>
-                            <p class="card-text">${item.description}</p>
+
+                            <p class="card-text" style="color: black;">${item.description}</p>
+
                         </div>
                     </div>
                 </div>`;
             $("#card-section").append(itemToAppend);
-
-            // Add click event listener for each card
-            $(`#${item.title}`).click(() => {
-                displayCardInfo(item); // Call the function to show info
-            });
         });
     };
 
