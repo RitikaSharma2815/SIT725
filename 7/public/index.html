@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SIT 725 Prac 3</title>
+  <meta name="description" content="Basic template for SIT 725 Prac 3">
+
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+  <div class="nav-wrapper navbar-size">
+    <a href="#" class="brand-logo">
+      <img class="user-image-size" src="image/user-image.jpg" alt="User Image" />
+    </a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a target="_blank" href="https://www.linkedin.com/in/ritika-sharmaa/">LinkedIn</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<main class="main-body">
+  <div class="container">
+    <div class="row">
+      
+      <!-- Heading -->
+      <div class="col s12 center-align">
+        <h1 id="heading">Welcome to SIT 725</h1>
+        <p class="flow-text">Hope you like it!!</p>
+      </div>
+
+      <!-- Image Section -->
+      <div class="col s12 center-align">
+        <img class="materialboxed materialboxed-image" src="image/live demo.avif" alt="Live Demo">
+      </div>
+
+      <!-- Random Number -->
+      <div class="col s12 center-align">
+        <p>Random Number from Server: <span id="number"></span></p>
+      </div>
+
+      <!-- Click Me Button -->
+      <div class="col s12 center-align">
+        <a class="waves-effect waves-light btn click-me-button" id="clickMeButton">
+          <i class="material-icons left">auto_fix_high</i>Click Me
+        </a>
+      </div>
+
+      <!-- Static Cards Section -->
+      <div id="card-section" class="row">
+
+        <!-- Golden Retriever Card -->
+        <div class="col s4 center-align">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="image/dog.avif" alt="Golden Retriever">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Golden Retriever
+                <i class="material-icons right">more_vert</i>
+              </span>
+              <p><a href="#">Heyy! I'm Golden Retriever</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Golden Retriever
+                <i class="material-icons right">close</i>
+              </span>
+              <p>I just wanted to say hello! My name is Golden Retriever. How are you doing?</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Poodle Card -->
+        <div class="col s4 center-align">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="image/dogp2.jpeg" alt="Poodle">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Poodle
+                <i class="material-icons right">more_vert</i>
+              </span>
+              <p><a href="#">Heyy! I'm Poodle</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Poodle
+                <i class="material-icons right">close</i>
+              </span>
+              <p>I just wanted to say hello! My name is Poodle. How are you doing?</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pug Card -->
+        <div class="col s4 center-align">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="image/dog3.jpeg" alt="Pug">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Pug
+                <i class="material-icons right">more_vert</i>
+              </span>
+              <p><a href="#">Heyy! I'm Pug</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Pug
+                <i class="material-icons right">close</i>
+              </span>
+              <p>I just wanted to say hello! My name is Pug. How are you doing?</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Modal Form -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <form id="userForm">
+            <div class="row">
+              <div class="input-field col s6">
+                <input placeholder="Enter first name" id="first_name" type="text" class="validate" required>
+                <label for="first_name">First Name</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="last_name" type="text" class="validate" required>
+                <label for="last_name">Last Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="password" type="password" class="validate" required>
+                <label for="password">Password</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="email" type="email" class="validate" required>
+                <label for="email">Email</label>
+              </div>
+            </div>
+            <div class="row center-align">
+              <button type="submit" class="waves-effect waves-light btn">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- End of Modal -->
+
+    </div>
+  </div>
+</main>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    M.Materialbox.init(document.querySelectorAll('.materialboxed'));
+    M.Modal.init(document.querySelectorAll('.modal'));
+  });
+</script>
+
+<!-- Socket.io and Custom Scripts -->
+<script src="/socket.io/socket.io.js"></script>
+<script src="scripts.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>
